@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmed – Bella Vita</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div id="loader"><div class="loader-spinner"></div><p class="loader-text">Bella Vita</p></div>
+    <main class="confirmation-main">
+        <div class="container confirmation-container">
+            <div class="confirmation-logo"><span class="logo-icon">✦</span><span class="logo-text">Bella Vita</span></div>
+            <div class="confirmation-badge"><span class="badge-icon">✅</span><h1>Order Successfully Received</h1></div>
+            <div class="confirmation-order-number"><span>Order #<span id="orderNumber">RT582947</span></span></div>
+            <div class="progress-tracker">
+                <div class="progress-step active"><span class="step-icon">📋</span><span>Order Received</span></div>
+                <div class="progress-step"><span class="step-icon">👨‍🍳</span><span>Preparing</span></div>
+                <div class="progress-step"><span class="step-icon">🚚</span><span>Out For Delivery</span></div>
+                <div class="progress-step"><span class="step-icon">✅</span><span>Delivered</span></div>
+            </div>
+            <section class="confirmation-details">
+                <h2>Order Details</h2>
+                <div class="details-grid">
+                    <div class="details-customer"><h3>Customer Information</h3><p><strong>Name:</strong> <span id="confName">—</span></p><p><strong>Type:</strong> <span id="confType">—</span></p><p><strong>Phone:</strong> <span id="confPhone">—</span></p><p><strong>Address:</strong> <span id="confAddress">—</span></p></div>
+                    <div class="details-order"><h3>Order Summary</h3><div id="confItems"></div><div class="conf-totals"><div><span>Subtotal</span><span id="confSubtotal">$0.00</span></div><div><span>Delivery Fee</span><span id="confDelivery">$0.00</span></div><div><span>Tax (8.5%)</span><span id="confTax">$0.00</span></div><div class="conf-grand"><span>Total</span><span id="confTotal">$0.00</span></div></div></div>
+                </div>
+                <div class="details-meta"><p><strong>Estimated Delivery Time:</strong> <span id="confETA">30–45 Minutes</span></p><p><strong>Payment Method:</strong> <span id="confPayment">—</span></p><p><strong>Status:</strong> <span class="status-badge">Preparing Order</span></p></div>
+            </section>
+            <div class="confirmation-thankyou"><p>Thank you for choosing Bella Vita. We look forward to serving you!</p></div>
+            <div class="confirmation-actions"><a href="index.html" class="btn btn-primary">Return Home</a><a href="index.html#menu" class="btn btn-secondary">Place Another Order</a></div>
+        </div>
+    </main>
+    <footer class="footer"><div class="container"><div class="footer-bottom"><span>&copy; 2026 Bella Vita Restaurant. All rights reserved.</span></div></div></footer>
+    <script src="js/confirmation.js"></script>
+</body>
+</html>

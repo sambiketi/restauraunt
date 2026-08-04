@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Vita - Authentic Italian Restaurant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div id="loader"><div class="loader-spinner"></div><p class="loader-text">Bella Vita</p></div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo"><span class="logo-icon">✦</span><span class="logo-text">Bella Vita</span></a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#menu">Menu</a><a href="#about">About</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cartToggle">🛒 <span class="cart-count" id="cartCount">0</span></button>
+                    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </nav>
+        <div class="hours-banner"><span>Open Daily: 11:00 AM – 11:00 PM</span><span>|</span><span>📍 123 Gourmet Street, Milan</span><span>|</span><span>📞 +1 (555) 123-4567</span></div>
+    </header>
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Est. 1982</span>
+            <h1 class="hero-title">Where Flavor Meets <em>Tradition</em></h1>
+            <p class="hero-subtitle">Authentic Italian cuisine crafted with love. Served fresh daily.</p>
+            <div class="hero-actions"><a href="#menu" class="btn btn-primary">View Our Menu</a><a href="#contact" class="btn btn-secondary">Reserve a Table</a></div>
+            <div class="hero-stats"><span>⭐ 4.9 (2,847 reviews)</span><span>🚚 Free Delivery Over $30</span><span>⏱ 30–45 Min Delivery</span></div>
+        </div>
+    </section>
+    <section class="featured" id="featured"><div class="container"><h2 class="section-title">Chef's <em>Signature</em></h2><div class="featured-grid" id="featuredGrid"></div></div></section>
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our <em>Menu</em></h2>
+            <div class="menu-search"><input type="text" id="menuSearch" placeholder="Search for dishes..." /><button type="button" id="clearSearch" class="clear-btn">✕</button></div>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="pizza">Pizza</button>
+                <button class="category-btn" data-category="burgers">Burgers</button>
+                <button class="category-btn" data-category="pasta">Pasta</button>
+                <button class="category-btn" data-category="bbq">BBQ</button>
+                <button class="category-btn" data-category="seafood">Seafood</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-grid" id="menuGrid"></div>
+        </div>
+    </section>
+    <section class="chef-section" id="about"><div class="container"><div class="chef-grid"><div class="chef-image"><img src="images/chef.jpg" alt="Chef Antonio" loading="lazy" /></div><div class="chef-content"><span class="chef-badge">Behind the Flavors</span><h2>Meet Chef <em>Antonio</em></h2><p>With over 30 years of experience in Michelin-starred kitchens across Italy, Chef Antonio brings the authentic taste of Tuscany to your table.</p><a href="#menu" class="btn btn-primary">Explore His Menu</a></div></div></div></section>
+    <section class="testimonials" id="testimonials"><div class="container"><h2 class="section-title">What Our Guests <em>Say</em></h2><div class="testimonial-grid"><div class="testimonial-card"><span class="testimonial-stars">★★★★★</span><p>"The best pasta I've ever had outside of Italy."</p><strong>— Sarah M.</strong></div><div class="testimonial-card"><span class="testimonial-stars">★★★★★</span><p>"Incredible service and the wood-fired pizzas are perfect."</p><strong>— James K.</strong></div><div class="testimonial-card"><span class="testimonial-stars">★★★★★</span><p>"Bella Vita is our go-to spot for date nights."</p><strong>— Elena R.</strong></div></div></div></section>
+    <footer class="footer" id="contact"><div class="container"><div class="footer-grid"><div class="footer-brand"><span class="logo-icon">✦</span><span class="logo-text">Bella Vita</span><p>Authentic Italian dining since 1982.</p><div class="footer-socials"><a href="#">📘</a><a href="#">📷</a><a href="#">🐦</a><a href="#">▶️</a></div></div><div class="footer-links"><h4>Quick Links</h4><a href="#menu">Menu</a><a href="#about">About Us</a><a href="#">Careers</a></div><div class="footer-hours"><h4>Opening Hours</h4><p>Mon – Thu: 11:00 – 22:00</p><p>Fri – Sat: 11:00 – 23:00</p><p>Sun: 12:00 – 21:00</p></div><div class="footer-newsletter"><h4>Subscribe</h4><form class="newsletter-form" id="newsletterForm"><input type="email" placeholder="Your email" required /><button type="submit" class="btn btn-primary">Join</button></form></div></div><div class="footer-bottom"><span>&copy; 2026 Bella Vita Restaurant. All rights reserved.</span></div></div></footer>
+    <div class="cart-sidebar" id="cartSidebar"><div class="cart-header"><h3>Your Cart</h3><button class="cart-close" id="cartClose">✕</button></div><div class="cart-body"><p class="cart-empty">Your cart is empty.</p><div class="cart-items" id="cartItems"></div></div><div class="cart-footer"><div class="cart-summary"><div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div><div class="cart-row"><span>Delivery</span><span id="cartDelivery">$0.00</span></div><div class="cart-row"><span>Tax (8.5%)</span><span id="cartTax">$0.00</span></div><div class="cart-row cart-total"><span>Total</span><span id="cartTotal">$0.00</span></div></div><button class="btn btn-primary btn-checkout" id="cartCheckout">Proceed to Checkout</button></div></div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <script src="js/menu.js"></script>
+</body>
+</html>
